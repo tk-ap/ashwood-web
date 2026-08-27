@@ -91,15 +91,18 @@ True education requires collaboration. Without the existing environment, the bui
 
 Primary references:
 
-1. `https://tk-ashwood-portfolio.tahlia-ashwood.chatgpt.site/`
-2. `https://tkashwood.myportfolio.com/`
+1. **Current / authoritative:** `https://tk-ashwood-portfolio.tahlia-ashwood.chatgpt.site/`
+2. **Legacy archive:** `https://tkashwood.myportfolio.com/`
 
 The original sources must remain untouched. The Vercel reconstruction must be independent and backed by GitHub.
+
+The GPT Site represents the current rebrand and recent appearance: long hair rather than the older fade. Its copy, hierarchy, current photography, and sequencing take precedence. The Adobe Portfolio documents earlier work; do not use its short-hair/fade-era photography as the primary hero or current positioning simply because it is easier to retrieve. If retained, legacy photography belongs after the current work or in a clearly marked archive.
 
 ### Modeling requirements
 
 - Preserve the established visual identity and photography where assets are available.
 - BarelySain is the latest work and must remain distinct from unrelated work.
+- Lead with verified recent long-hair photography and the current rebrand.
 - Do not classify Malibu coastline photography as BarelySain unless source evidence establishes the relationship.
 - Preferred hero asset is image `6508` when its correct source becomes available.
 - Preserve strong DTLA knit-sweater imagery and avoid repetitive near-duplicates.

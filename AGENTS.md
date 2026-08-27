@@ -38,7 +38,10 @@ True education requires collaboration. Credit the sites, platforms, models, tool
 
 - GitHub is the permanent source of truth; commit every production change.
 - Vercel is the production host.
-- The original ChatGPT Sites and Adobe Portfolio remain untouched reference/legacy sources until migration is verified.
+- The updated GPT Portfolio Site is the primary reference for current visual identity, copy, sequencing, and recent work.
+- The Adobe Portfolio is a legacy archive only. Its short-hair/fade-era photography must not become the primary current positioning merely because those files are locally available.
+- Current long-hair work, BarelySain, and the updated GPT Site's rebrand lead the Portfolio once verified assets are available. Legacy images may support a later archive section.
+- The GPT Site and Adobe Portfolio remain untouched source references until migration is verified.
 - Never delete, modify, prematurely redirect, or depend on a legacy ChatGPT Site in production.
 - Do not promote a reconstruction until its preview passes functional, responsive, accessibility, and visual checks.
 
@@ -52,3 +55,7 @@ True education requires collaboration. Credit the sites, platforms, models, tool
 6. Expand the broader ASHWOOD landing, BUILD JOURNAL product profiles/timeline, and About experience.
 
 When uncertain, prioritize: function, clarity, content, design, decoration.
+
+## Repository design skills
+
+Before changing any browser-rendered surface, read `skills/SKILL_RESOLUTION.md` and the selected vendored `SKILL.md` files completely. For `/portfolio`, use the `creative-portfolio` stack defined there. `scroll-experience` is optional and subordinate to photography; never use it to justify scroll hijacking, content delays, or motion that competes with the work.
