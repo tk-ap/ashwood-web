@@ -3,31 +3,189 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TK’s public record of building an AI product ecosystem." />
-    <meta name="theme-color" content="#f5f3ef" />
+    <meta name="description" content="TK Ashwood’s living public record of building an AI product ecosystem — decisions, evidence, pivots, collaborators, and what is being proven next." />
+    <meta name="theme-color" content="#11110f" />
     <title>Build Journal — ASHWOOD</title>
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/journal/journal.css" />
   </head>
-  <body>
-    <main class="shell">
-      <header class="masthead">
-        <a class="wordmark" href="/" aria-label="ASHWOOD home">ASHWOOD</a>
-        <span class="section-label">Build Journal</span>
-      </header>
+  <body class="journal-page">
+    <a class="skip-link" href="#journal-content">Skip to journal</a>
 
-      <section class="intro page-intro" aria-labelledby="page-title">
-        <p class="eyebrow">A living public record</p>
-        <h1 id="page-title">Building in context.</h1>
-        <p class="note lede">The decisions, pivots, tools, collaborators, and evidence behind the work—captured honestly as the ecosystem takes shape.</p>
-        <p class="route-action"><a href="https://ashwood-build-journal.hire-tkashwood.chatgpt.site/" target="_blank" rel="noreferrer">Open TK’s Build Journal <span aria-hidden="true">↗</span></a></p>
-      </section>
-
-      <nav class="future-nav" aria-label="ASHWOOD sections">
-        <a href="/">Home</a>
+    <header class="journal-masthead">
+      <a class="journal-wordmark" href="/" aria-label="ASHWOOD home">ASHWOOD</a>
+      <nav class="journal-nav" aria-label="ASHWOOD sections">
         <a href="/portfolio">Portfolio</a>
         <a aria-current="page" href="/journal">Build Journal</a>
         <a href="/about">About</a>
       </nav>
+    </header>
+
+    <main id="journal-content">
+      <section class="journal-hero" aria-labelledby="journal-title">
+        <div class="journal-hero__meta">
+          <span>A living public record</span>
+          <span>Products · decisions · evidence</span>
+        </div>
+        <div class="journal-hero__body">
+          <p class="journal-kicker">BUILD JOURNAL / ASHWOOD</p>
+          <h1 id="journal-title">Building<br />in context.</h1>
+          <p class="journal-deck">The decisions, pivots, tools, collaborators, failures, and evidence behind the work — captured honestly as the ecosystem takes shape.</p>
+        </div>
+        <div class="journal-hero__rule" aria-hidden="true"></div>
+        <div class="journal-hero__statement">
+          <p>The finished product is only part of the work.</p>
+          <p class="journal-hero__statement-note">This journal keeps the reasoning visible: what changed, why it changed, what is real now, and what still has to be proven.</p>
+        </div>
+      </section>
+
+      <section class="journal-now" aria-labelledby="now-title">
+        <div class="section-marker"><span>00</span><span>NOW</span></div>
+        <div class="journal-now__content">
+          <h2 id="now-title">What is being built.</h2>
+          <p>Four connected product directions are being developed under ASHWOOD. Each solves a different part of working with increasingly capable AI: understanding context, understanding products, governing authorization, and operating agents responsibly.</p>
+          <p class="journal-note">Maturity changes quickly. Product pages and dated entries should distinguish live capability, validation work, simulation, and future intent rather than compressing them into one marketing claim.</p>
+        </div>
+      </section>
+
+      <section class="product-index" aria-labelledby="products-title">
+        <div class="section-marker"><span>01</span><span>PRODUCT INDEX</span></div>
+        <div class="product-index__intro">
+          <h2 id="products-title">Different problems.<br />One working ecosystem.</h2>
+          <p>Each chapter keeps its own thesis and identity. The journal supplies the shared record: problem, intended user, category, current state, evidence, collaborators, decisions, and what gets tested next.</p>
+        </div>
+
+        <article class="journal-product journal-product--feature">
+          <div class="journal-product__number">01</div>
+          <div class="journal-product__identity">
+            <p class="journal-label">Context intelligence</p>
+            <h3>ALVIRA</h3>
+          </div>
+          <div class="journal-product__thesis">
+            <p>AI knows a lot. ALVIRA is exploring what becomes possible when it can understand the person using it with comparable depth — and keep that context current over time.</p>
+            <dl class="journal-meta-grid">
+              <div><dt>Role</dt><dd>Context layer</dd></div>
+              <div><dt>Journal lens</dt><dd>Reflection, continuity, usefulness</dd></div>
+              <div><dt>Evidence</dt><dd>Product surfaces, context loops, user-flow decisions</dd></div>
+            </dl>
+            <a class="journal-link" href="https://alviratech.vercel.app/" target="_blank" rel="noreferrer">Visit ALVIRA <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="journal-product">
+          <div class="journal-product__number">02</div>
+          <div class="journal-product__identity">
+            <p class="journal-label">Portfolio intelligence</p>
+            <h3>Ailhat</h3>
+          </div>
+          <div class="journal-product__thesis">
+            <p>Ailhat observes a portfolio of products as a system: surfacing opportunity, risk, drift, and work, then connecting that intelligence to a governed workforce.</p>
+            <dl class="journal-meta-grid">
+              <div><dt>Role</dt><dd>Product / portfolio intelligence</dd></div>
+              <div><dt>Journal lens</dt><dd>Grounding, readiness, actionability</dd></div>
+              <div><dt>Evidence</dt><dd>Scans, recommendations, launch-readiness findings</dd></div>
+            </dl>
+            <a class="journal-link" href="https://ailhat.vercel.app/" target="_blank" rel="noreferrer">Visit Ailhat <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="journal-product">
+          <div class="journal-product__number">03</div>
+          <div class="journal-product__identity">
+            <p class="journal-label">Authorization intelligence</p>
+            <h3>Agent Control</h3>
+          </div>
+          <div class="journal-product__thesis">
+            <p>Agent Control asks a simple operational question before autonomous work happens: is this agent actually available, authorized, and appropriate for this action now?</p>
+            <dl class="journal-meta-grid">
+              <div><dt>Role</dt><dd>Authorization layer</dd></div>
+              <div><dt>Journal lens</dt><dd>Permission, availability, governance</dd></div>
+              <div><dt>Evidence</dt><dd>Policy decisions, runtime constraints, control surfaces</dd></div>
+            </dl>
+            <a class="journal-link" href="https://agent-availability.vercel.app/" target="_blank" rel="noreferrer">Visit Agent Control <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="journal-product">
+          <div class="journal-product__number">04</div>
+          <div class="journal-product__identity">
+            <p class="journal-label">Governed agent operations</p>
+            <h3>Ledgato</h3>
+          </div>
+          <div class="journal-product__thesis">
+            <p>Ledgato explores the operating layer around agent work: making execution legible, governed, and accountable instead of treating autonomous activity as an opaque black box.</p>
+            <dl class="journal-meta-grid">
+              <div><dt>Role</dt><dd>Operations / governance</dd></div>
+              <div><dt>Journal lens</dt><dd>Execution, auditability, control</dd></div>
+              <div><dt>Evidence</dt><dd>Runtime behavior, constraints, operational UI</dd></div>
+            </dl>
+            <a class="journal-link" href="https://ledgato.vercel.app/" target="_blank" rel="noreferrer">Visit Ledgato <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="journal-method" aria-labelledby="method-title">
+        <div class="section-marker"><span>02</span><span>HOW TO READ THIS</span></div>
+        <div class="journal-method__body">
+          <h2 id="method-title">Evidence before narrative.</h2>
+          <div class="journal-method__grid">
+            <div>
+              <span class="method-index">A</span>
+              <h3>Decisions</h3>
+              <p>What changed, what tradeoff was made, and why the direction moved.</p>
+            </div>
+            <div>
+              <span class="method-index">B</span>
+              <h3>Proof</h3>
+              <p>Previews, screenshots, scans, tests, customer signals, and other artifacts that ground a claim.</p>
+            </div>
+            <div>
+              <span class="method-index">C</span>
+              <h3>Failures</h3>
+              <p>Broken paths, wrong assumptions, deployment mistakes, capability gaps, and what they taught.</p>
+            </div>
+            <div>
+              <span class="method-index">D</span>
+              <h3>Attribution</h3>
+              <p>The models, platforms, tools, people, communities, and prior work that materially enabled the build.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chronology-preview" aria-labelledby="chronology-title">
+        <div class="section-marker"><span>03</span><span>CHRONOLOGY</span></div>
+        <div class="chronology-preview__body">
+          <div class="chronology-heading">
+            <h2 id="chronology-title">The record stays dated.</h2>
+            <p>Future product profiles will use a consistent event vocabulary so progress can be read as history rather than retroactive storytelling.</p>
+          </div>
+          <div class="chronology-list" role="list" aria-label="Build Journal entry types">
+            <div class="chronology-entry" role="listitem"><span>DECISION</span><p>A meaningful product or architecture choice and its reasoning.</p></div>
+            <div class="chronology-entry" role="listitem"><span>SHIPPED</span><p>A verified change that reached an inspectable product surface.</p></div>
+            <div class="chronology-entry" role="listitem"><span>EVIDENCE</span><p>A scan, user signal, result, artifact, or other grounding input.</p></div>
+            <div class="chronology-entry" role="listitem"><span>FAILED TEST</span><p>A result that disproved an assumption or exposed a gap.</p></div>
+            <div class="chronology-entry" role="listitem"><span>THESIS</span><p>A belief being tested, clearly separated from established capability.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="journal-closing" aria-labelledby="closing-title">
+        <p class="journal-kicker">Different work. Same person.</p>
+        <h2 id="closing-title">The point is not to look finished.</h2>
+        <p>The point is to make the work legible while it is still becoming — what was believed, what was built, what broke, what changed, and what earned the next step.</p>
+        <div class="journal-closing__links">
+          <a href="/portfolio">Creative Portfolio</a>
+          <a href="/about">About TK</a>
+          <a href="/">ASHWOOD Home</a>
+        </div>
+      </section>
     </main>
+
+    <footer class="journal-footer">
+      <span class="journal-footer__mark">A®</span>
+      <span>ASHWOOD · Build Journal</span>
+      <span>© 2026 TK Ashwood</span>
+    </footer>
   </body>
 </html>
