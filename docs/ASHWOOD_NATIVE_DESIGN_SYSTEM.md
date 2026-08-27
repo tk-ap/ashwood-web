@@ -9,6 +9,20 @@ Source evidence: rendered `ashwood-info.vercel.app` landing page reviewed 2026-0
 
 ASHWOOD itself should feel restrained, architectural, and authored: warm paper, black ink, extreme negative space, small tracked identity type, one decisive display statement, and almost no decorative chrome. The content route supplies the expression.
 
+## Identity thesis
+
+**I follow ideas wherever they go.** is the personal operating principle. It explains movement across modeling, music, technology, product building, creative direction, and future forms without forcing those practices into a single maker category.
+
+**One point of view. Many forms.** is the underlying ASHWOOD philosophy. It expresses the connective tissue across those forms rather than claiming authorship of every image or artifact presented on the site.
+
+Landing hierarchy:
+
+- ASHWOOD
+- Tahlia Ashwood Peart
+- `I follow ideas / wherever they go.`
+- `One point of view. Many forms.`
+- Portfolio · Build Journal · About
+
 ## Shared visual grammar
 
 - Warm off-white paper and near-black ink are the root palette.
@@ -25,10 +39,10 @@ ASHWOOD itself should feel restrained, architectural, and authored: warm paper, 
 ## Route expressions
 
 ### Home — Identity
-Warm paper. Maximum negative space. Minimal copy. The canonical reference is the `I make things.` landing composition.
+Warm paper. Maximum negative space. Minimal copy. The canonical composition pairs the personal operating principle `I follow ideas wherever they go.` with the quieter ASHWOOD thesis `One point of view. Many forms.`
 
 ### Portfolio — Image
-Inherits ASHWOOD geometry, masthead proportions, metadata logic, spacing rhythm, focus behavior, and responsive principles. It may invert to a dark editorial canvas. Photography is the dominant material. TK Ashwood is the creative identity inside the ASHWOOD parent shell.
+Inherits ASHWOOD geometry, masthead proportions, metadata logic, spacing rhythm, focus behavior, and responsive principles. It may invert to a dark editorial canvas. Photography is the dominant material. TK Ashwood is the creative identity inside the ASHWOOD parent shell; the portfolio may present TK as subject/muse as well as collaborator, so site language must not imply TK photographed every image.
 
 ### Build Journal — Thought / Evidence
 Begins with ASHWOOD-level quiet and authorship. The archive may become denser or alternate paper/dark evidence sections as chronology accumulates. Dates, reasoning, evidence, screenshots, annotations, and artifacts replace photography as the dominant material.
