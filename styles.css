@@ -123,14 +123,61 @@ h1,
   letter-spacing: .08em;
   text-transform: uppercase;
 }
+
+/* TAP IN is the shared invitation behavior: quiet at rest, directional on intent. */
 .ashwood-nav a,
-.future-nav a { text-decoration: none; }
+.future-nav a,
+.journal-nav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  overflow: hidden;
+  text-decoration: none;
+  border-bottom: 0 !important;
+  white-space: nowrap;
+  transition: transform .28s ease, letter-spacing .28s ease;
+}
+.ashwood-nav a::after,
+.future-nav a::after,
+.journal-nav a::after {
+  content: "TAP IN →";
+  max-width: 0;
+  margin-left: 0;
+  opacity: 0;
+  transform: translateX(-8px);
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: .78em;
+  letter-spacing: .12em;
+  transition: max-width .32s ease, margin-left .32s ease, opacity .22s ease, transform .32s ease;
+}
 .ashwood-nav a:hover,
 .ashwood-nav a:focus-visible,
-.ashwood-nav a[aria-current="page"],
 .future-nav a:hover,
 .future-nav a:focus-visible,
-.future-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 5px; }
+.journal-nav a:hover,
+.journal-nav a:focus-visible {
+  transform: translateX(4px);
+  letter-spacing: .11em;
+  text-decoration: none;
+}
+.ashwood-nav a:hover::after,
+.ashwood-nav a:focus-visible::after,
+.future-nav a:hover::after,
+.future-nav a:focus-visible::after,
+.journal-nav a:hover::after,
+.journal-nav a:focus-visible::after {
+  max-width: 7.5em;
+  margin-left: 10px;
+  opacity: .62;
+  transform: translateX(0);
+}
+.ashwood-nav a[aria-current="page"],
+.future-nav a[aria-current="page"],
+.journal-nav a[aria-current="page"] {
+  font-weight: 700;
+}
 
 /* Route expression helpers. Portfolio can invert; Journal can move between paper and evidence-rich sections. */
 .ashwood-night { background: var(--ashwood-night); color: var(--ashwood-night-ink); --ashwood-rule: rgba(241,238,230,.2); }
@@ -159,4 +206,12 @@ h1,
   .ashwood-footer { align-items: flex-start; flex-direction: column; }
 }
 
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .ashwood-nav a,
+  .future-nav a,
+  .journal-nav a,
+  .ashwood-nav a::after,
+  .future-nav a::after,
+  .journal-nav a::after { transition: none; }
+}
