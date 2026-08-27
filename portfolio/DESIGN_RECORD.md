@@ -4,9 +4,9 @@ Status: implementation direction for the first current-identity `/portfolio` rec
 
 ## Purpose
 
-Reconstruct `/portfolio` as the creative-ventures portfolio defined by `ASHWOOD_BUILD_SPEC.md`: modeling first, then other creative disciplines only when real material exists. The page must read as authored creative work, not as a SaaS/product index.
+Reconstruct `/portfolio` as the creative-ventures portfolio defined by `ASHWOOD_BUILD_SPEC.md`: modeling first, with other creative disciplines included only when real material exists. The page must read as authored creative work, not as a SaaS/product index.
 
-Primary visitor outcome: within roughly 30 seconds, a visitor should understand who TK Ashwood is creatively, see current representative work, distinguish recent work from archive material, and have an obvious path to make contact or continue into ASHWOOD.
+Primary visitor outcome: within roughly 30 seconds, a visitor should understand who TK Ashwood is creatively, see current representative work, distinguish recent work from archive material, and have an obvious booking/contact path.
 
 ## Named aesthetic direction
 
@@ -15,148 +15,131 @@ Primary visitor outcome: within roughly 30 seconds, a visitor should understand 
 Dominant direction: editorial / magazine.
 Secondary quality: refined minimalism.
 
-The visual language should feel like a contemporary fashion/editorial portfolio with disciplined systems thinking underneath it. Photography carries the emotional weight; typography, spacing, and sequencing provide authorship. Technology-product UI conventions are explicitly out of scope for this route.
+The implementation should preserve the current GPT Portfolio’s visual grammar rather than reinterpret it: near-black canvas, warm off-white typography, fluorescent green and magenta accents, oversized editorial type, numbered sections, thin rules, high-contrast photography, large negative space, and asymmetric image composition.
 
 ## DFII
 
-- Aesthetic Impact: 4/5 — large photographic scale and asymmetric editorial composition can be memorable without effects.
-- Context Fit: 5/5 — directly matches modeling, fashion, campaign, and creative-venture material.
-- Implementation Feasibility: 4/5 — achievable in the current static HTML/CSS architecture; lightbox behavior may require a small amount of native JavaScript.
-- Performance Safety: 4/5 — safe if responsive image sizing, lazy loading, and restrained motion are enforced.
-- Consistency Risk: 3/5 — expressive asymmetry requires disciplined responsive rules and rendered verification.
+- Aesthetic Impact: 4/5
+- Context Fit: 5/5
+- Implementation Feasibility: 4/5
+- Performance Safety: 4/5
+- Consistency Risk: 3/5
 
 **DFII: 14 — execute with discipline.**
 
-## Source precedence and reference observations
+## Verified source observations
 
-Source precedence remains:
+The updated GPT Portfolio has now been visually inspected through user-supplied browser evidence covering the hero, introduction, BarelySain, selected work, runway, About, model profile, selected experience, music, contact, and footer.
 
-1. Updated GPT Portfolio Site — authoritative for current visual identity, copy, sequencing, recent long-hair photography, BarelySain, and current work.
+Verified visual/content characteristics:
+
+- Hero uses current long-hair BarelySain photography and oversized `TK Ashwood` typography.
+- Header navigation is compact and portfolio-specific: Work, About, Music, Details, Book TK.
+- Hero descriptor: “A distinct presence for fashion, editorial, runway, and image-led storytelling.”
+- Opening statement: “Individuality isn’t a detail. It’s the whole image.”
+- BarelySain is section `01 / Latest Work` and is treated as the newest chapter, with Malibu + DTLA / Los Angeles context and Cashden campaign credit.
+- Selected Work is section `02`; this reconstruction intentionally reframes earlier imagery as archive + range so fade-era work is not mistaken for current appearance.
+- Runway is section `03 / Runway` with the `On the walk` framing.
+- About is section `04 / About` and uses “Presence with a point of view.”
+- Model Profile is section `05 / Model Profile` with digitals + booking details.
+- Selected Experience is section `06`.
+- Music is section `07 / Music`, presenting t.kap and debut single `IN ME` as a distinct second creative practice.
+- Contact is section `08 / Contact`, with WHO Management agency booking context.
+- Footer distinguishes `TK Ashwood · Model` from `t.kap · Recording artist`.
+
+## Source precedence
+
+1. Updated GPT Portfolio Site — authoritative for current visual identity, copy, sequencing, current photography, BarelySain, and current work.
 2. User-supplied current assets and metadata.
 3. Adobe Portfolio — legacy archive and historical credits only.
 
-Verified repository-level observations that may guide implementation now:
-
-- The current identity must lead with recent long-hair imagery rather than fade-era legacy photography.
-- BarelySain is the latest work and must remain distinct from unrelated work.
-- Strong DTLA knit-sweater imagery should be preserved without repetitive near-duplicates.
-- Image `6508` is the preferred hero once its correct source is verified.
-- Malibu coastline photography must not be classified as BarelySain without source evidence.
-
-**Source-fidelity gate:** the authoritative GPT Portfolio could not be fetched through the current chat web path during creation of this record. Exact visual observations, copy transcription, final image sequence, credits, and asset selection must be verified from that source before the reconstruction is called faithful or production-ready. Do not invent missing source details.
+The current identity must lead with recent long-hair imagery. Older short-hair/fade material may remain only as clearly contextualized range/archive work. BarelySain remains distinct from unrelated work.
 
 ## Design system snapshot
 
 ### Typography
 
-Use typography as editorial structure rather than UI chrome.
-
-- Display: one expressive editorial face, selected only if it can be loaded legally and performantly; otherwise use a high-quality locally available serif fallback strategy rather than adding a framework or font package.
-- Body/navigation: one restrained sans-serif companion.
-- Avoid Arial/Inter/Roboto as the final portfolio typography.
-- Use large display scale selectively; photography remains primary.
-
-Final font selection is deferred until the authoritative source is visually inspected so the reconstruction does not drift from the current rebrand.
+Typography is structural and oversized rather than decorative. The current implementation uses a restrained Helvetica-style sans stack as a source-faithful temporary choice until exact font provenance is verified. Do not introduce a font dependency merely for novelty.
 
 ### Color tokens
 
-Keep the existing warm paper/ink relationship as a provisional base until source inspection confirms or replaces it:
+- `--paper`: near-black `#090909`
+- `--ink`: warm off-white `#f0eee7`
+- `--muted`: reduced-emphasis gray
+- `--green`: fluorescent acid green
+- `--magenta`: vivid magenta
+- `--line`: low-contrast off-white divider
 
-- `--paper`: warm near-white
-- `--ink`: near-black
-- `--muted-ink`: reduced-emphasis text
-- `--rule`: low-contrast divider
-- `--accent`: optional and source-derived; no invented SaaS accent palette
-
-Color should support the photography rather than compete with it.
+Accents are sparse and subordinate to photography.
 
 ### Spacing rhythm
 
-Use a restrained editorial rhythm rather than card-grid spacing:
-
-- micro: 4–8px
-- text/internal: 12–24px
-- section: 48–96px
-- major editorial break: 12–20vh where composition benefits
-
-Spacing may be intentionally asymmetric, but accidental alignment drift must be caught in rendered review.
+Use large editorial breaks, asymmetric whitespace, and variable image scale rather than a regular product-card grid. Major sections should feel like spreads rather than UI modules.
 
 ### Motion philosophy
 
-Natural document scrolling only.
-
-Allowed:
-- restrained opacity/transform entrance where it improves orientation;
-- subtle image/link hover states on pointer devices;
-- lightbox open/close transitions;
-- reduced-motion support.
-
-Not allowed:
-- scroll hijacking;
-- content delayed behind animation;
-- decorative parallax competing with photography;
-- custom motion added merely to make the page feel interactive.
+Natural document scrolling only. Smooth anchor scrolling is allowed with reduced-motion fallback. No scroll hijacking, decorative parallax, or motion that competes with photography.
 
 ## Differentiation anchor
 
 **Photographic scale + editorial asymmetry.**
 
-If the ASHWOOD wordmark were removed from a screenshot, the page should still be recognizable through a sequence of large, differently scaled images, deliberate negative space, restrained captions/credits, and typography that behaves like an editorial spread rather than a stack of website cards.
+The page should remain recognizable without the logo through extreme type scale, negative space, asymmetric image sequencing, restrained captions, fluorescent accents, and thin editorial rules.
 
-This avoids generic UI by treating the work itself as the interface instead of packaging every item into equal cards, tiles, pills, or dashboard components.
+## Approved content architecture
 
-## What is explicitly preserved
+1. Hero — TK Ashwood + current creative descriptor + current BarelySain hero.
+2. Manifesto statement — “Individuality isn’t a detail. It’s the whole image.”
+3. `01 / Latest Work` — BarelySain, treated as one featured campaign with a deeper image sequence.
+4. `02 / Selected Work` — explicitly archive + range, not current digitals.
+5. `03 / Runway` — `On the walk`.
+6. `04 / About` — concise identity and creative point of view.
+7. `05 / Model Profile` — current digitals, booking measurements, location, travel, representation.
+8. `06 / Selected Experience` — compact verified credits layer.
+9. `07 / Music` — t.kap / `IN ME`, visually distinct but still within the creative portfolio.
+10. `08 / Contact` — booking hierarchy, WHO Management, direct/creative contact, Instagram.
+11. Footer — `TK®`, model / recording-artist identity split.
 
-- ASHWOOD as the site-level umbrella identity.
-- TK Ashwood as the established public/professional identity.
-- The separation between creative Portfolio and BUILD JOURNAL/SaaS work.
-- Current GPT Portfolio source hierarchy and current-image precedence.
-- BarelySain as distinct recent work.
-- Existing accessible ASHWOOD route navigation unless source inspection justifies a portfolio-specific variation that remains coherent with the site.
-- Semantic HTML, visible keyboard focus, responsive behavior, and accessible image enlargement.
+Product links for ALVIRA, Ailhat, Agent Control, Ledgato, and other SaaS work do not belong in the creative portfolio body; that work belongs in BUILD JOURNAL.
 
-## First implementation composition
+## Image policy for this branch
 
-The first faithful modeling checkpoint should aim for this editorial sequence, subject to source verification:
+The additional BarelySain shoot is still uploading to Google Drive. Until the actual source files are available:
 
-1. Minimal ASHWOOD masthead / Portfolio context.
-2. Current-identity opening: TK Ashwood + concise creative descriptor + verified recent hero photography.
-3. Recent work sequence led by current long-hair imagery.
-4. BarelySain as a distinct editorial project grouping with verified credits/context.
-5. Additional selected modeling/fashion/campaign work using deduplicated image sequences, including the strong DTLA knit-sweater selection where source-appropriate.
-6. Clearly subordinate archive/earlier work only when useful and accurately labeled.
-7. Simple contact/continue path and ASHWOOD navigation.
-
-Product links for ALVIRA, Ailhat, Agent Control, and Ledgato do not belong in the creative portfolio body; those move conceptually to BUILD JOURNAL.
+- do not use stock photography;
+- do not fabricate or scrape replacement campaign imagery;
+- reserve deliberate asset frames in the layout;
+- use existing verified source assets only when their provenance is clear;
+- select the final BarelySain hero/main edit/extended campaign only after reviewing the full upload;
+- replace current short-hair digitals with current long-hair digitals before production promotion.
 
 ## Implementation constraints
 
 - Stay in native HTML/CSS/JS unless demonstrated need requires otherwise.
 - Do not introduce a framework, CMS, animation library, or abstraction for this pass.
-- Prefer responsive `srcset`/`sizes` when usable source variants exist.
-- Lazy-load below-the-fold imagery.
-- Preserve aspect ratios to avoid layout shift.
-- Lightbox must be keyboard operable, close with Escape, expose meaningful accessible labels, and restore focus to the originating image/link.
-- Header/nav rows must wrap safely.
-- Use `overflow-x: clip` only as a defensive backstop; root causes of overflow still must be found.
+- Preserve semantic headings, keyboard-visible focus, responsive wrapping, and at least 44px primary action targets.
+- Use responsive image sizing and lazy loading once real assets are integrated.
+- Lightbox work begins only when image assets exist; it must be keyboard operable, close with Escape, and restore focus.
+- `overflow-x: clip` is a defensive backstop only; rendered overflow still must be measured.
 
 ## Verification gates before completion
 
-Do not call the implementation complete until all of the following have runtime evidence:
+Do not call the reconstruction complete until all of the following have runtime evidence:
 
-- authoritative GPT source visually inspected and final source sequence/credits reconciled;
+- final BarelySain asset edit reconciled with uploaded source files;
+- verified current digitals/measurements/contact details;
 - desktop screenshot reviewed;
 - tablet screenshot reviewed;
 - phone screenshot reviewed;
 - horizontal overflow measured at desktop, <=1024px, and approximately 390px with result `0`;
 - keyboard navigation verified;
-- lightbox keyboard behavior and focus restoration verified;
+- lightbox keyboard behavior and focus restoration verified after assets are integrated;
 - image loading checked for correct sizing/lazy loading;
 - accessibility structure and names checked;
 - console errors and warnings resolved;
 - broken links checked;
-- preview reviewed before any production promotion.
+- Vercel preview reviewed before any production promotion.
 
 ## Production rule
 
-This branch/PR is a reconstruction workspace. It must not be described as production-ready or promoted merely because the code is complete. Source fidelity and rendered verification are blocking gates.
+This branch/PR is a reconstruction workspace. It remains draft and must not be merged or promoted merely because the image-independent HTML/CSS is implemented. Asset selection, source fidelity, and rendered verification are blocking gates.
