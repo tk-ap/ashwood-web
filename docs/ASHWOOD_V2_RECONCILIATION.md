@@ -1,8 +1,8 @@
 # ASHWOOD v2 — Reconciliation Record
 
-Status: active implementation record  
+Status: **V2-A foundation complete; ready for V2-B implementation**  
 Branch: `ashwood-v2`  
-Phase: **V2-A — reconciliation + content foundation**
+Phase completed: **V2-A — reconciliation + content foundation**
 
 This file records which concepts from the open historical ASHWOOD PRs are being absorbed into v2 and which are intentionally not being copied forward.
 
@@ -55,11 +55,11 @@ Preserve:
 - the distinction between a source note and a public edited note;
 - the rule that shared patterns do not force every product into one market.
 
-V2-A action:
+V2-A action completed:
 
-- add publication contract;
-- retain a sanitized editorial draft for `The distance between available and usable.`;
-- defer any personally sensitive source context until explicit editorial approval.
+- publication contract added;
+- sanitized editorial draft retained for `The distance between available and usable.`;
+- personally sensitive source context excluded from automatic publication pending explicit editorial review.
 
 ## PR #10 — Combined preview
 
@@ -128,13 +128,13 @@ Machine-readable rules for:
 - BUILD PROVENANCE;
 - SITREP publication/privacy behavior.
 
-### FIELD NOTE draft source
+### `/journal/field-notes/2026-08-28-distance-between-available-and-usable.md`
 
-A sanitized non-rendered draft may be stored under `journal/field-notes/` so v2 can absorb the useful thesis from PR #11 without copying personally sensitive source material into the public experience.
+Sanitized, non-rendered editorial draft that carries the useful cross-build thesis from PR #11 without promoting personally sensitive source-note material.
 
 ## Privacy / publication boundary
 
-During V2-A, repository source material is not equivalent to approved public copy.
+Repository source material is not equivalent to approved public copy.
 
 Do not automatically render:
 
@@ -153,6 +153,17 @@ Locked decision:
 
 ASHWOOD may publish selected provenance and verified outcomes from agent-supported work. It must not expose internal workforce telemetry or control surfaces.
 
+## V2-A verification
+
+Comparison against `main` after the foundation pass:
+
+- status: `ahead`;
+- ahead by: 6 commits at verification time;
+- behind by: 0;
+- baseline / merge base: `3bac50d225f52c62818f0074b69042d7020f9cb8`;
+- changed surfaces at verification: `AGENTS.md`, `ASHWOOD_BUILD_SPEC.md`, `data/*`, this reconciliation record, and one non-rendered Field Note source file;
+- no HTML, CSS, browser JavaScript, route implementation, framework, CMS, or backend changes were included in V2-A.
+
 ## V2-A acceptance checklist
 
 - [x] implementation branch cut from current production baseline;
@@ -165,7 +176,17 @@ ASHWOOD may publish selected provenance and verified outcomes from agent-support
 - [x] private/personal source material excluded from automatic publication;
 - [x] no framework/backend added;
 - [x] no rendered design expansion yet;
-- [ ] add sanitized FIELD NOTE source draft;
-- [ ] compare branch against `main` and confirm V2-A contains only foundation changes.
+- [x] sanitized FIELD NOTE source draft added;
+- [x] branch compared against `main` and confirmed foundation-only.
 
-Once the final two items are complete, V2-A is ready to hand into V2-B.
+## Handoff to V2-B
+
+V2-B may now modify the rendered Home surface, but must begin by reading:
+
+1. `ASHWOOD_BUILD_SPEC.md`;
+2. `AGENTS.md`;
+3. `data/sitrep.json`;
+4. `data/publication-contracts.json`;
+5. the relevant repository design-skill instructions.
+
+The next build target is the Home **Living Editorial Field Report**: preserve identity first, then add a sparse CURRENT / SITREP layer, movement, latest Field Note, and resilient static route access.
