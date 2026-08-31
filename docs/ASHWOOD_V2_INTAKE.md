@@ -312,7 +312,140 @@ If veteran context is included later, About is the appropriate place for a conci
 
 ---
 
-## Combined v2 guardrails after Inputs 01 + 02
+## Architecture decision — agent-os / Workforce inside ASHWOOD
+
+### Decision
+
+**IMPLEMENT as enabling infrastructure and provenance, not as a separate ASHWOOD offering.**
+
+Agent OS / Workforce is a foundational execution layer across the broader ecosystem. ASHWOOD should not reposition it as a public product, nav item, or standalone destination. Instead, ASHWOOD can become a strong public proof surface for what a governed agentic operating model actually enables.
+
+Working relationship:
+
+> ASHWOOD shows the work.  
+> BUILD JOURNAL shows how the work happened.  
+> agent-os / Workforce helps make the work possible.
+
+### 1. Use agent-os behind the ASHWOOD build
+
+The framework can support real ASHWOOD work such as:
+
+- repository-aware agent routing;
+- owned and vendor skill selection;
+- implementation and refactoring;
+- design / frontend execution;
+- research and synthesis;
+- testing and visual verification;
+- release checks;
+- documentation and handoffs.
+
+The public site does not need to expose this machinery directly. The visible outcome should be a better-maintained, more coherent, continuously documented body of work.
+
+### 2. Add build provenance to selected BUILD JOURNAL entries
+
+For major releases, decisions, experiments, and builds, ASHWOOD may expose a compact provenance layer such as:
+
+- `HUMAN` — direction, judgment, taste, approval, constraint-setting;
+- `AGENT WORKFORCE` — research, implementation, synthesis, testing, documentation, or other bounded execution;
+- `TOOLS / PLATFORMS` — GitHub, Vercel, ChatGPT, Codex, and other systems that materially enabled the work.
+
+This is not a machine-generated activity log. It is an editorial record of meaningful collaboration.
+
+Recommended UI/content label to explore:
+
+- `HOW THIS WAS BUILT`
+- `BUILD PROVENANCE`
+
+This supports the broader ASHWOOD principle that true education requires collaboration and makes the Founder Build Archive more useful as evidence of the operating model behind the work.
+
+### 3. Connect agent-os to Build Sponsorship / facilitation
+
+The strongest public-facing connection is not access to the workforce itself. It is a governed execution model for selected build tasks.
+
+Conceptual flow:
+
+```text
+ROADMAP ITEM
+→ bounded task / scope
+→ estimated agent execution budget
+→ expected human oversight
+→ sponsor funds the specific task
+→ governance / authorization boundary
+→ agent workforce executes within that boundary
+→ human review / approval
+→ verified outcome
+→ evidence enters BUILD JOURNAL
+```
+
+The sponsor is therefore funding a bounded unit of governed execution, not transferring unrestricted funds or authority to an autonomous agent.
+
+This can eventually connect the existing Build Sponsorship idea to concrete evidence of what was funded, what work occurred, how much human oversight was required, and what outcome resulted.
+
+### 4. Allow SITREP to consume approved outcomes, not internal telemetry
+
+The v2 SITREP may eventually surface public state that originated from agent-enabled work, but only when the result is approved and factually verifiable.
+
+Good examples:
+
+```text
+MOVEMENT / BUILDS
+Native music listening integrated.
+Implementation complete · human review pending.
+```
+
+```text
+LATEST SIGNAL
+Mobile navigation conflict resolved after visual verification.
+```
+
+Avoid:
+
+```text
+03 AGENTS ACTIVE
+07 TASKS RUNNING
+WORKFORCE ONLINE
+```
+
+unless those counts become genuinely meaningful, public, verified product information. Internal workforce activity is not itself the story.
+
+### Public-positioning implication
+
+This architecture can strengthen the reputation goal from Input 01 without turning ASHWOOD into a technical résumé.
+
+The public signal becomes:
+
+> TK designs and operates governed agentic systems that can carry real work across distinct creative and product environments.
+
+That claim should be demonstrated through provenance and outcomes rather than stated everywhere as marketing copy.
+
+### Privacy / governance guardrails
+
+Do not expose through ASHWOOD:
+
+- private agent identities or unnecessary internal role names;
+- credentials, permissions, tokens, mailbox access, or authorization scopes;
+- private repository state;
+- internal prompts or founder context that was not approved for publication;
+- private task queues;
+- unreviewed agent reasoning or assessments;
+- execution telemetry solely to make the system appear active.
+
+Public provenance should explain **who/what materially contributed** while protecting the internal operating surface.
+
+### agent-os / Workforce classification
+
+- Agent OS / Workforce as separate ASHWOOD nav/product — **REJECT**
+- Agent-enabled ASHWOOD implementation — **IMPLEMENT**
+- BUILD JOURNAL provenance layer — **IMPLEMENT selectively**
+- Human / agent / tool attribution — **IMPLEMENT where meaningful**
+- Build Sponsorship governed-execution connection — **IMPLEMENT as product-direction contract; public mechanics can phase in later**
+- SITREP consumption of approved agent-enabled outcomes — **IMPLEMENT when verified**
+- Public workforce dashboard / live internal agent telemetry — **REJECT**
+- Exposure of private permissions, prompts, or operating context — **REJECT**
+
+---
+
+## Combined v2 guardrails after Inputs 01 + 02 + agent-os architecture decision
 
 1. Identity before telemetry.
 2. Actual state before animation.
@@ -325,10 +458,12 @@ If veteran context is included later, About is the appropriate place for a conci
 9. The site should make TK's point of view clearer without forcing one profession to explain every form of work.
 10. Make existing owned work more legible and valuable before creating another category.
 11. Collaboration and attribution are part of the evidence, not footer decoration.
-12. Future cross-chat outputs must be reconciled here before implementation.
+12. Agent infrastructure remains infrastructure unless there is a genuine public product reason to expose it.
+13. Provenance may reveal meaningful human / agent / tool collaboration; it must not leak internal control surfaces.
+14. Future cross-chat outputs must be reconciled here before implementation.
 
 ## Intake status
 
-Inputs logged: **2**.
+Inputs logged: **2**, plus **1 cross-cutting architecture decision** for agent-os / Workforce.
 
-More v2 outputs should be appended and reconciled before the visual implementation branch is cut.
+Current intake is sufficient to begin a coherent v2 implementation plan when desired.
