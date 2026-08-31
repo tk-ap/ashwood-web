@@ -7,24 +7,122 @@
     <meta name="theme-color" content="#f5f3ef" />
     <title>ASHWOOD — Tahlia Ashwood Peart</title>
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/home.js" defer></script>
   </head>
-  <body>
-    <main class="shell" aria-labelledby="site-title">
-      <header class="masthead">
+  <body class="home-page">
+    <main class="home-shell" aria-labelledby="site-title">
+      <header class="home-masthead">
         <a class="wordmark" href="/" aria-label="ASHWOOD home">ASHWOOD</a>
+        <nav class="home-nav" aria-label="ASHWOOD sections">
+          <a href="/portfolio">Modeling</a>
+          <a href="/music">Music</a>
+          <a href="/journal">Builds</a>
+          <a href="/about">About</a>
+        </nav>
       </header>
 
-      <section class="intro">
-        <p class="eyebrow">Tahlia Ashwood Peart</p>
-        <h1 id="site-title">I follow ideas<br />wherever they go.</h1>
-        <p class="note ashwood-thesis">One point of view. Many forms.</p>
+      <section class="home-hero" aria-labelledby="site-title">
+        <div class="home-field" aria-hidden="true"></div>
+
+        <div class="home-identity">
+          <p class="eyebrow">Tahlia Ashwood Peart</p>
+          <h1 id="site-title">I follow ideas<br />wherever they go.</h1>
+          <p class="home-thesis">One point of view. Many forms.</p>
+        </div>
+
+        <button
+          class="eureka-trigger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="field-index"
+          data-enhanced-only
+          hidden
+        >
+          <span class="eureka-dot" aria-hidden="true"></span>
+          <span class="eureka-label">Eureka</span>
+        </button>
       </section>
 
-      <nav class="future-nav" aria-label="ASHWOOD sections">
-        <a href="/portfolio">Portfolio</a>
-        <a href="/journal">Build Journal</a>
-        <a href="/about">About</a>
-      </nav>
+      <section class="current-report" aria-labelledby="current-title">
+        <div class="current-meta">
+          <p class="section-kicker">Current / SITREP</p>
+          <dl class="status-pair">
+            <div><dt>Status</dt><dd data-sitrep-status>Active</dd></div>
+            <div><dt>Updated</dt><dd data-sitrep-updated>Aug 31, 2026</dd></div>
+          </dl>
+        </div>
+
+        <div class="current-signal">
+          <p class="section-kicker">Current signal</p>
+          <h2 id="current-title" data-sitrep-signal>ASHWOOD v2 is consolidating current work, Field Notes, native music, and build provenance into one clearer public record without collapsing the distinct practices into one feed.</h2>
+        </div>
+
+        <div class="movement-list" aria-label="Current movement">
+          <a class="movement-row" href="/portfolio" data-movement="modeling">
+            <span class="movement-name">Modeling</span>
+            <span class="movement-state">Active</span>
+            <span class="movement-note">The photography-led Modeling experience remains its own visual practice; v2 is limiting changes here to navigation, current-work hierarchy, and connective context.</span>
+            <span class="movement-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="movement-row" href="/music" data-movement="music">
+            <span class="movement-name">Music</span>
+            <span class="movement-state">In development</span>
+            <span class="movement-note">A dedicated native listening route is being prepared around released work, beginning with IN ME.</span>
+            <span class="movement-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="movement-row" href="/journal" data-movement="builds">
+            <span class="movement-name">Builds</span>
+            <span class="movement-state">Active</span>
+            <span class="movement-note">BUILD JOURNAL is expanding as a Founder Build Archive with Field Notes, selected provenance, collaborator attribution, and clearer current proof points.</span>
+            <span class="movement-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <a class="latest-note" href="/journal" data-latest-field-note>
+          <span class="section-kicker">Latest field note</span>
+          <span class="latest-note__title">The distance between available and usable.</span>
+          <span class="latest-note__date">Aug 28, 2026</span>
+          <span class="latest-note__arrow" aria-hidden="true">Read →</span>
+        </a>
+      </section>
+
+      <section class="field-index" id="field-index" aria-labelledby="field-index-title" hidden>
+        <div class="field-index__header">
+          <div>
+            <p class="section-kicker">Found something</p>
+            <h2 id="field-index-title">Field index</h2>
+          </div>
+          <button class="field-index__close" type="button" data-field-close>Close</button>
+        </div>
+
+        <div class="capability-map" aria-label="ASHWOOD capability index">
+          <a class="capability capability--see" href="/portfolio">
+            <span class="capability-word">See</span>
+            <span class="capability-note">Image, presence, collaboration.</span>
+            <span class="capability-destination">Modeling ↗</span>
+          </a>
+
+          <a class="capability capability--listen" href="/music">
+            <span class="capability-word">Listen</span>
+            <span class="capability-note">Released music inside ASHWOOD.</span>
+            <span class="capability-destination">Music ↗</span>
+          </a>
+
+          <a class="capability capability--read" href="/journal">
+            <span class="capability-word">Read</span>
+            <span class="capability-note">Thought in motion, decisions kept in context.</span>
+            <span class="capability-destination">Builds ↗</span>
+          </a>
+
+          <a class="capability capability--trace" href="/journal">
+            <span class="capability-word">Trace</span>
+            <span class="capability-note">How work moved: human judgment, agent-supported execution, tools, evidence.</span>
+            <span class="capability-destination">Provenance ↗</span>
+          </a>
+        </div>
+
+        <p class="field-index__current">CURRENT stays above ground. The SITREP is not an easter egg.</p>
+      </section>
     </main>
   </body>
 </html>
