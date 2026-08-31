@@ -8,7 +8,124 @@ Rule: do not treat any single prior chat output as canonical on its own. Reconci
 
 ASHWOOD v2 should make the site feel more alive, more legible as a body of ongoing work, and more useful as public proof of TK Ashwood's evolving point of view — without turning the site into a dashboard, military-themed interface, or generic personal brand.
 
-The strongest synthesis from the first v2 input is:
+The first upload contained TWO distinct outputs and they should remain separate in the intake:
+
+- **Input 01:** alignment / reputation / ownership / IP / distribution strategy.
+- **Input 02:** ASHWOOD SITREP / living field-report concept.
+
+Their ideas overlap, but neither should be treated as the source for the other.
+
+---
+
+## Input 01 — Alignment, reputation concentration, relationship equity, ownership, IP, pricing, distribution
+
+### Source thesis
+
+The first output assesses progress against a 12–18 month strategy centered on:
+
+1. becoming known for one thing;
+2. building relationship equity;
+3. negotiating ownership;
+4. creating intellectual property;
+5. pricing from value rather than discomfort;
+6. adding distribution around what is owned.
+
+Its most useful conclusion for ASHWOOD v2 is that the user's ownership/IP trajectory is ahead of the public reputation trajectory. The public layer should therefore make the underlying capability and point of view easier for outsiders to recognize rather than adding more disconnected categories.
+
+### Decision: IMPLEMENT as public-proof strategy
+
+ASHWOOD v2 should help visitors understand the recurring capability behind the work through evidence rather than self-scoring or generic positioning language.
+
+Make visible:
+
+- recurring concern with context, intelligence, authorization, execution, governance, continuity, and coordination burden;
+- the way product concepts evolved rather than appearing fully formed;
+- the user's ability to turn ambiguous problems into systems and named frameworks;
+- collaborators, tools, platforms, and influences that materially moved the work;
+- what changed, what was learned, and what is being tested next;
+- economic proof and real-world use as it becomes available.
+
+Do **not** publish private directional scores such as `6.5/10`, `9/10`, etc. The site should demonstrate the thesis through the work.
+
+### Reputation concentration implication
+
+The near-term ASHWOOD role is not to create another product category. It is to make the existing body of work legible enough that an outsider can understand the through-line.
+
+ASHWOOD should therefore increasingly function as:
+
+- proof of thought;
+- proof of work;
+- proof of evolution;
+- proof of collaboration;
+- proof of ownership;
+- eventually proof of economic value.
+
+This should remain broader than a technical résumé because ASHWOOD also carries modeling, music, and other forms of work.
+
+### Relationship equity layer
+
+BUILD JOURNAL should increasingly record not only what changed, but who or what enabled the change when relevant.
+
+Recommended fields for future entries:
+
+- `WITH / ENABLED BY`
+- `WHAT CHANGED`
+- `WHY IT MATTERED`
+- `NEXT MOVE`
+
+This preserves the existing ASHWOOD principle that true education requires collaboration and makes the archive a relationship record as well as a founder record.
+
+### Ownership / IP implication
+
+V2 should emphasize depth and appreciation of existing assets rather than multiplying surfaces.
+
+Practical rule:
+
+> Make what is already owned more valuable before adding another public category.
+
+Named frameworks, category language, build history, source records, product architecture, and reusable operating concepts should be documented cleanly enough to become teachable and referenceable without turning the site into a claims page.
+
+### Distribution implication
+
+ASHWOOD is one of the main distribution surfaces around the work. V2 should improve discovery and continuity across:
+
+- Modeling
+- Music
+- Builds / BUILD JOURNAL
+- About
+- future public frameworks / essays only when real material exists
+
+Distribution should come from stronger routing, clearer context, shareable entries, current public proof, and good attribution — not from adding noisy marketing modules.
+
+### Pricing implication
+
+No pricing UI is implied by this output. The relevant v2 lesson is to distinguish:
+
+- execution cost;
+- asset value;
+- judgment / architecture;
+- outcome value.
+
+This may later inform Build Sponsorship, services, advisory, licensing, or product pricing, but no public pricing mechanic should be invented solely from this strategy output.
+
+### Input 01 classification
+
+- Reputation concentration thesis — **IMPLEMENT**
+- Relationship equity / collaborator visibility — **IMPLEMENT**
+- Existing-asset appreciation over more invention — **IMPLEMENT as editorial/product rule**
+- Distribution around owned work — **IMPLEMENT**
+- Public self-scoring — **REJECT**
+- New pricing UI — **DEFER until there is a real offer**
+
+---
+
+## Input 02 — ASHWOOD SITREP / living field-report concept
+
+### Source thesis
+
+The second output proposes that ASHWOOD become a live field report on one person's work, thinking, and movement rather than a conventional static portfolio.
+
+Its strongest concept is:
 
 > ASHWOOD can behave like a living field report on one person's work, thinking, and movement.
 
@@ -18,15 +135,6 @@ That idea should strengthen the existing thesis rather than replace it:
 - `One point of view. Many forms.` remains the ASHWOOD connective thesis.
 - Modeling, Music, Builds / BUILD JOURNAL, and About remain distinct disciplines/routes.
 - BUILD JOURNAL remains the durable founder archive and evidence record.
-
-## Input 01 — Reputation concentration + living SITREP layer
-
-### Source ideas worth preserving
-
-The source output identifies two related opportunities:
-
-1. The ownership/IP trajectory is stronger than the public reputation trajectory. The site should make the underlying capability and point of view easier for outsiders to recognize.
-2. ASHWOOD can feel like a living field report rather than a static portfolio by surfacing current status, recent movement, signals, field notes, and eventually interpreted assessments.
 
 ### Decision: IMPLEMENT, but not literally
 
@@ -56,7 +164,7 @@ Use these selectively, especially on Home and BUILD JOURNAL.
 - Do not add a realtime backend simply to create the appearance of activity.
 - Do not use fake terminal animation, decorative radar, tactical maps, or military cosplay.
 
-## Proposed v2 home architecture
+## Proposed v2 home architecture from Input 02
 
 ### 1. Preserve the authored identity opening
 
@@ -105,36 +213,7 @@ The current explicit routes remain intact:
 
 The SITREP should make those routes feel connected, not replace them.
 
-## Reputation / public-proof implication
-
-The source output correctly identifies that ASHWOOD should help outsiders understand the through-line behind the builds.
-
-Do **not** publish private directional scores such as `6.5/10`, `9/10`, etc.
-
-Instead, v2 should make the following visible through evidence:
-
-- the recurring interest in context, intelligence, authorization, and governed execution;
-- the way product concepts evolved rather than appearing fully formed;
-- the user's ability to turn ambiguous problems into systems and named frameworks;
-- collaborators, tools, platforms, and influences that materially moved the work;
-- what changed, what was learned, and what is being tested next.
-
-This strengthens the user's recognizable public capability without reducing ASHWOOD to a technical résumé.
-
-## Relationship equity layer
-
-BUILD JOURNAL should increasingly record not only what changed, but who or what enabled the change when relevant.
-
-Recommended fields for future entries:
-
-- `WITH / ENABLED BY`
-- `WHAT CHANGED`
-- `WHY IT MATTERED`
-- `NEXT MOVE`
-
-This preserves the existing ASHWOOD principle that true education requires collaboration and makes the archive a relationship record as well as a founder record.
-
-## Technical implementation path
+## Technical implementation path for Input 02
 
 The current repository is deliberately native HTML/CSS/JS and explicitly avoids adding frameworks/backends without demonstrated need. Preserve that constraint.
 
@@ -191,7 +270,7 @@ An AI-generated `ASSESSMENT` layer can be explored later, but it must:
 
 The useful question is not `what can AI say about TK?` but `what pattern is becoming visible across already-public work?`
 
-## Design direction
+## Design direction from Input 02
 
 Name: **Living Editorial Field Report**
 
@@ -222,7 +301,18 @@ Treat the field-report vocabulary as an underlying grammar, not a public identit
 
 If veteran context is included later, About is the appropriate place for a concise factual reference. It should explain part of the observational / adaptive working style without making military service the lead proposition of ASHWOOD.
 
-## V2 guardrails
+### Input 02 classification
+
+- SITREP / living field report — **IMPLEMENT as secondary Home + Journal grammar**
+- Full military information architecture — **REJECT**
+- Exact current-position / location display — **REJECT**
+- Realtime backend immediately — **DEFER**
+- AI interpreted assessment — **DEFER until public state layer is reliable**
+- Static fake activity counters — **REJECT**
+
+---
+
+## Combined v2 guardrails after Inputs 01 + 02
 
 1. Identity before telemetry.
 2. Actual state before animation.
@@ -233,19 +323,12 @@ If veteran context is included later, About is the appropriate place for a conci
 7. No fake realtime.
 8. No dashboardification of the native ASHWOOD shell.
 9. The site should make TK's point of view clearer without forcing one profession to explain every form of work.
-10. Future cross-chat outputs must be reconciled here before implementation.
+10. Make existing owned work more legible and valuable before creating another category.
+11. Collaboration and attribution are part of the evidence, not footer decoration.
+12. Future cross-chat outputs must be reconciled here before implementation.
 
 ## Intake status
 
-Input 01 classification:
-
-- Reputation concentration thesis — **IMPLEMENT as public-proof strategy**
-- Relationship equity / collaborator visibility — **IMPLEMENT in BUILD JOURNAL content contract**
-- SITREP / living field report — **IMPLEMENT as secondary Home + Journal grammar**
-- Full military information architecture — **REJECT**
-- Exact current-position / location display — **REJECT**
-- Realtime backend immediately — **DEFER**
-- AI interpreted assessment — **DEFER until public state layer is reliable**
-- Static fake activity counters — **REJECT**
+Inputs logged: **2**.
 
 More v2 outputs should be appended and reconciled before the visual implementation branch is cut.
