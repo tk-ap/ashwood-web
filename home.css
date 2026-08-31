@@ -118,6 +118,10 @@ body.home-page {
   line-height: 1.4;
 }
 
+.eureka-trigger[hidden] {
+  display: none;
+}
+
 .eureka-trigger {
   position: absolute;
   z-index: 3;
