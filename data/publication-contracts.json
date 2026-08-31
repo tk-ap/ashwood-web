@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "fieldNote": {
+    "required": ["date", "title", "type", "status", "observation", "whatChanged", "whyItMattered", "evidence", "nextMove"],
+    "rules": [
+      "FIELD NOTES live inside BUILD JOURNAL; they are not a second publication system.",
+      "Cross-build notes may connect ideas at the thesis level without forcing products into the same market or audience.",
+      "Personal source-note material requires deliberate editorial review before public rendering.",
+      "Distinguish contemporaneous notes from reconstructed history.",
+      "Do not imply unbuilt functionality is live."
+    ]
+  },
+  "buildProvenance": {
+    "fields": ["human", "agentWorkforce", "enabledBy", "withOrInfluencedBy", "evidence", "nextMove"],
+    "rules": [
+      "Use provenance selectively when it teaches how meaningful work happened.",
+      "Agent contribution must describe bounded work, not raw internal activity.",
+      "Public evidence should point to a verifiable artifact, release, deployment, result, test, or decision record where possible.",
+      "Never publish credentials, permissions, raw prompts, private task state, raw agent conversations, or unpublished founder/customer context."
+    ]
+  },
+  "sitrep": {
+    "source": "/data/sitrep.json",
+    "rules": [
+      "Current state is editorial content, not presence tracking.",
+      "No exact live location.",
+      "No fake agent, task, customer, or activity counts.",
+      "No machine-derived claim without a verifiable public source and editorial rule.",
+      "Core navigation must remain usable when the current-state renderer fails."
+    ]
+  }
+}
