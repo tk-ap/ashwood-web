@@ -1,0 +1,30 @@
+{
+  "updated": "2026-08-31",
+  "status": "active",
+  "signal": "ASHWOOD v2 is consolidating current work, Field Notes, native music, and build provenance into one clearer public record without collapsing the distinct practices into one feed.",
+  "movement": [
+    {
+      "area": "modeling",
+      "state": "active",
+      "note": "The photography-led Modeling experience remains its own visual practice; v2 is limiting changes here to navigation, current-work hierarchy, and connective context.",
+      "href": "/portfolio"
+    },
+    {
+      "area": "music",
+      "state": "in-development",
+      "note": "A dedicated native listening route is being prepared around released work, beginning with IN ME.",
+      "href": "/music"
+    },
+    {
+      "area": "builds",
+      "state": "active",
+      "note": "BUILD JOURNAL is expanding as a Founder Build Archive with Field Notes, selected provenance, collaborator attribution, and clearer current proof points.",
+      "href": "/journal"
+    }
+  ],
+  "latestFieldNote": {
+    "date": "2026-08-28",
+    "title": "The distance between available and usable.",
+    "href": "/journal"
+  }
+}
