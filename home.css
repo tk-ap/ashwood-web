@@ -25,6 +25,13 @@ body.home-page {
   gap: 28px;
 }
 
+.home-masthead .wordmark,
+.home-nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
 .home-nav {
   display: flex;
   flex-wrap: wrap;
@@ -455,12 +462,6 @@ body.home-page {
     gap: 6px 18px;
   }
 
-  .home-nav a {
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-  }
-
   .home-hero {
     min-height: auto;
     display: block;
@@ -485,7 +486,12 @@ body.home-page {
     position: relative;
     top: auto;
     right: auto;
-    margin: -24px 0 0 auto;
+    margin: -24px 26px 0 auto;
+  }
+
+  .eureka-trigger::before {
+    width: 144px;
+    height: 144px;
   }
 
   .current-meta,
